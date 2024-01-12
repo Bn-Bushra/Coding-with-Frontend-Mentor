@@ -35,8 +35,8 @@ Hovered State
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github.com](https://github.com/Bn-Bushra/Coding-with-Frontend-Mentor/tree/main/blog-preview-card-main)
+- Live Site URL: [byteburaq-blogcard.netlify.app](https://byteburaq-blogcard.netlify.app)
 
 ## My process
 
