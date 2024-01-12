@@ -1,0 +1,107 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+  --darkblue: hsl(228, 45%, 44%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Figtree, sans-serif;
+  background-color: var(--yellow);
+  font-size: 16px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--darkblue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  margin: 15vh auto;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  box-shadow: 5px 5px 0px var(--black);
+  animation: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.container:hover {
+  box-shadow: 10px 10px 0px var(--black);
+}
+
+.image img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 15px 0 10px 0;
+  background-color: var(--yellow);
+}
+
+.date {
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--black);
+}
+
+.container h3 {
+  font-weight: 900;
+  font-size: 22px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  animation: color 0.3s ease 0ms;
+}
+
+.container h3:hover,
+.container h3:active {
+  color: var(--yellow);
+}
+
+.container p {
+  color: var(--grey);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  display: flex;
+  align-items: center;
+}
+
+.card-image img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.card-name {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 90vw;
+  }
+}
