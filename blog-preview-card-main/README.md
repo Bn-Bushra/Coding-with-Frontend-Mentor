@@ -29,9 +29,9 @@ Users should be able to:
 ### Screenshot
 
 Normal State
-![](./screenshot-1.jpg)
+![Normal State](./screenshot-2.png)
 Hovered State
-![](./screenshot-2.jpg)
+![Hovered State](./screenshot-3.png)
 
 ### Links
 
@@ -90,7 +90,7 @@ Design Conversion
 
 ## Author
 
-- Website - [My Website](https://www.your-site.com)
+- Website - [My Website](https://byteburaq-blogcard.netlify.app)
 - Frontend Mentor - [@Bn-Bushra](https://www.frontendmentor.io/profile/Bn-Bushra)
 - Twitter - [@byteburaq](https://www.twitter.com/byteburaq)
 
