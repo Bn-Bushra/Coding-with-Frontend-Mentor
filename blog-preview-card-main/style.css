@@ -16,26 +16,19 @@ body {
   background-color: var(--yellow);
   font-size: 16px;
 }
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: var(--darkblue);
-}
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: fit-content;
-  margin: 15vh auto;
+  margin: 25% auto;
   padding: 25px;
   border-radius: 15px;
   background-color: var(--white);
   border: 1px solid var(--black);
   box-shadow: 5px 5px 0px var(--black);
-  animation: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .container:hover {
