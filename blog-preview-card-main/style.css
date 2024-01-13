@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: fit-content;
-  margin: 33vh auto;
+  margin: 160px auto;
   padding: 25px;
   border-radius: 15px;
   background-color: var(--white);
