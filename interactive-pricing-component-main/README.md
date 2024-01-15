@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Interactive Pricing Component](https://your-live-site-url.com)
+- Solution URL: [Github Directory](https://github.com/Bn-Bushra/Coding-with-Frontend-Mentor/tree/fd3ecd4104f157fbece9c6b9820b1abe0546e6ce/interactive-pricing-component-main)
+- Live Site URL: [Interactive Pricing Component](https://byteburaq-pricingcomponent.netlify.app)
 
 ## My process
 
