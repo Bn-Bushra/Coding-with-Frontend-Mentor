@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <!-- <img src="./images/bg-pattern.svg" alt="" /> -->
+    <img class="circles" src="./images/pattern-circles.svg" alt="" />
+    <main class="wrapper">
+      <header>
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </header>
+      <article class="container">
+        <section class="pricing">
+          <p id="pageviews" class="pageviews">100k pageviews</p>
+          <p id="price" class="price">
+            <span class="main-price" id="main-price">$16.00</span> / month
+          </p>
+        </section>
+        <section class="slider-container">
+          <input
+            type="range"
+            name="price slider"
+            id="price-slider"
+            class="slider"
+            min="1"
+            max="5"
+            value="3"
+            oninput="updatePrice()"
+          />
+        </section>
+        <section class="billing">
+          <div class="discount-billing">
+            <p>Monthly Billing</p>
+            <span class="toggle-discount" onclick="toggleDiscount()">
+              <span class="toggle" id="discountToggle"></span>
+            </span>
+            <p>Yearly Billing</p>
+          </div>
+          <p class="discount-text" id="discountText">25% discount</p>
+        </section>
+        <section class="offer">
+          <ul>
+            <li>
+              <span class="tick"
+                ><img src="./images/icon-check.svg" alt="" /></span
+              >Unlimited websites
+            </li>
+            <li>
+              <span class="tick"
+                ><img src="./images/icon-check.svg" alt="" /></span
+              >100% data ownership
+            </li>
+            <li>
+              <span class="tick"
+                ><img src="./images/icon-check.svg" alt="" /></span
+              >Email reports
+            </li>
+          </ul>
+          <button class="cta-btn">Start my trial</button>
+        </section>
+      </article>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
