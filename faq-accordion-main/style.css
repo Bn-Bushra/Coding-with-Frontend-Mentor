@@ -1,0 +1,128 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightpink: hsl(275, 100%, 97%);
+  --graypurple: hsl(292, 16%, 49%);
+  --darkpurple: hsl(292, 42%, 14%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', 'san serif';
+  background-color: var(--lightpink);
+}
+
+/* background overlay */
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 30%;
+  background-image: url('./assets/images/background-pattern-desktop.svg');
+}
+
+::selection {
+  background-color: var(--darkpurple);
+}
+
+/* FAQ WRAPPER BOX */
+
+.container {
+  max-height: 100vh;
+  background-color: #fff;
+  width: 350px;
+  position: relative;
+  padding: 20px;
+  z-index: 20;
+  margin: 15vh auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* FAQ TITLE AND STAR */
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 2.4rem;
+}
+
+/* STAR  */
+.title img {
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+/* CONTAINER FOR EACH Q&A */
+.qabox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  height: calc(fit-content + '100px');
+  border-bottom: 1px solid rgb(166, 166, 166, 0.1);
+}
+
+/* question and icon */
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  font-size: 8px;
+  margin-bottom: 10px 0;
+  cursor: pointer;
+}
+
+/* ACTIVE AND HOVER STATE */
+.question h3:hover,
+.question h3:active {
+  color: var(--graypurple);
+}
+
+.question img {
+  width: 20px;
+  height: 20px;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+.answer p {
+  color: var(--graypurple);
+  font-size: 10px;
+  font-weight: 400;
+  padding-top: 7px;
+  line-height: 1.5;
+}
+
+.qabox.active .answer {
+  max-height: fit-content;
+}
+.minus-icon {
+  display: none;
+}
+
+.qabox.active .question .plus-icon {
+  display: none;
+}
+.qabox.active .question .minus-icon {
+  display: block;
+}
+
+.qabox img {
+  transition: all 0.6s ease;
+}
