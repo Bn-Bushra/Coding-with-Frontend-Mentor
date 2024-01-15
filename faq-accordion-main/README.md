@@ -48,8 +48,6 @@ Users should be able to:
 - Mobile-first workflow
 - Javascript Toggling
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 Javascript toggling and dynamic changing of collapsing icon and expanding icon.
@@ -73,20 +71,33 @@ Javascript toggling and dynamic changing of collapsing icon and expanding icon.
     <p>lorem ipsum</p>
   </div>
 </div>
-``` ```css .qabox.active .answer { max-height: fit-content; } .minus-icon {
-display: none; } .qabox.active .question .plus-icon { display: none; }
-.qabox.active .question .minus-icon { display: block; } .qabox img { transition:
-all 0.6s ease; }
+````
+````css
+.qabox.active .answer {
+   max-height: fit-content;
+}
+.minus-icon {
+  display: none;
+}
+.qabox.active .question .plus-icon {
+  display: none;
+}
+.qabox.active .question .minus-icon {
+  display: block;
+}
+.qabox img {
+  transition: all 0.6s ease;
+}
 ````
 
-```js
+````js
 const qaboxes = document.querySelectorAll('.qabox');
 qaboxes.forEach((qabox) => {
   qabox.addEventListener('click', () => {
     qabox.classList.toggle('active');
   });
 });
-```
+````
 
 ### Continued development
 
@@ -100,7 +111,6 @@ I was not able to place the background image successfully. I would like to know 
 - Frontend Mentor - [@bn-bushra](https://www.frontendmentor.io/profile/bn-bushra)
 - Twitter - [@byteburaq](https://www.twitter.com/byteburaq)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
