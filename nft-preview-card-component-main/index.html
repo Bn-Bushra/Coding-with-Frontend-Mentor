@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <!-- ====container==== -->
+    <main class="container">
+
+
+    <!-- ====nft picture==== -->
+    <section class="nft-picture">
+      <img src="./images/image-equilibrium.jpg" alt="Equilibrium NFT image">
+      <div class="overlay"><span></span><img src="./images/icon-view.svg" alt=""></div>
+    </section>
+
+
+    <!-- ====nft name==== -->
+    <section class="nft-name">
+      Equilibrium #3429
+    </section>
+
+
+    <!-- ====short description==== -->
+    <section class="short-desc">
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+    </section>
+
+
+    <!-- ====nft price==== (Put it in flexbox) ====nft purchase date left==== -->
+    <section class="nft-purchase__details">
+      
+      <div class="nft-price">
+        <img src="./images/icon-ethereum.svg" alt="" class="icon"> <h4>0.041 ETH</h4> 
+      </div>
+      <div class="nft-purchase__date__left">
+        <img src="./images/icon-clock.svg" alt="clock icon" class="icon"><p>3 days left</p> 
+      </div>
+    </section>
+
+
+    <!-- ====nft creator picture and name==== -->
+    <section class="nft-creator">
+      <div class="nft-creator__picture" on>
+        <img src="./images/image-avatar.png" alt="creator picture">
+      </div>
+      <div class="nft-creator__name">
+        <p>Creation of <span>Jules Wyvern</span></p>
+      </div>
+    </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
