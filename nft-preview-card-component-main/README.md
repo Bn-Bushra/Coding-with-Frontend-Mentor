@@ -34,8 +34,8 @@ Screenshot of my solution.
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Bn-Bushra/Coding-with-Frontend-Mentor/tree/2dd8d5f903e9fe1bbaeff02e98fe01be85db87b7/nft-preview-card-component-main)
+- Live Site URL: [Live Site](https://byteburaq-nftcard.netlify.app)
 
 ## My process
 
