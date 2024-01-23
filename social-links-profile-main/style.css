@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* colours */
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(0, 0%, 20%);
+    --dark-gray: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+
+    /* fontfamily */
+    --normal-ff: 'Inter', sans-serif;
+    /* fontsize */
+    --regular-fs: 0.875rem;
+    /* fontweight */
+    --regular-fw: 400;
+    --semibold-fw: 600;
+    --bold-fw: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover, a:focus {
+    color: var(--off-black);
+}
+
+body {
+    font-family: var(--normal-ff);
+    font-size: var(--regular-fs);
+    background-color: var(--off-black);
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 20rem;
+    background-color: var(--dark-gray);
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 0;
+}
+
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-info {
+    width: 100%;
+}
+
+.user-image {
+    border-radius: 50%;
+    width:5rem;
+    margin-bottom: 2rem;
+}
+
+.user-name {
+    font-weight: var(--bold-fw);
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.user-location {
+    color: var(--green);
+    font-size: calc(var(--regular-fs)/1.2);
+    font-weight: var(--semibold-fw);
+    margin-bottom: .5rem;
+}
+
+.user-desc {
+    opacity: .7;
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+}
+
+
+ul li.link {
+    text-align: center;
+    margin-bottom: .5rem;
+    padding: .7rem 0;
+    background-color: var(--gray);
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+ul li.link:hover,
+ul li.link:focus {
+    background-color: var(--green);
+    color: var(--off-black)
+}
