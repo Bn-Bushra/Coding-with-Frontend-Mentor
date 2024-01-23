@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  /*colours*/
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --gray-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+
+  /* font-size */
+
+  /* name and stats */
+  --BS: 1.125rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.wrapper {
+  background-color: var(--dark-cyan);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--white);
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.profile-card__bg {
+  width: 350px;
+  height: 150px;
+  background: url('./images/bg-pattern-card.svg');
+  background-size: cover;
+}
+
+.profile-card__pic img {
+  border-radius: 50%;
+  border: 0.4rem solid var(--white);
+  overflow: hidden;
+  transform: translateY(-50%);
+  margin-bottom: -4rem;
+}
+.profile-card__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 1rem 0 1rem 0; */
+  margin: 1.4rem;
+  width: 100%;
+  /* height: 250px; */
+}
+
+.profile-card__name {
+  font-weight: 700;
+  font-size: var(--BS);
+}
+.profile-card__age,
+.profile-card__country {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+.profile-card__data {
+  border-top: 1px solid rgb(150, 150, 150, 0.2);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+}
+.profile-card__data h4 {
+  font-weight: 700;
+  font-size: var(--BS);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+}
+.data {
+  display: block;
+  font-weight: 300;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 85%;
+  }
+}
