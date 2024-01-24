@@ -72,7 +72,7 @@ header {
 }
 
 button {
-    outline: none;
+    cursor: pointer;
     border: none;
     color: var(--clrViolet);
     border-radius: 2rem;
@@ -98,6 +98,7 @@ button:hover {
 }
 
 .social-link {
+    cursor: pointer;
     font-size: 1rem;
     width: 3rem;
     height: 3rem;
