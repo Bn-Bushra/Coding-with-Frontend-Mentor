@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/Bn-Bushra/Coding-with-Frontend-Mentor/huddle-landing-page-with-single-introductory-section-master)
+- Solution URL: [GitHub Repository](https://github.com/Bn-Bushra/Coding-with-Frontend-Mentor/)
 - Live Site URL: [Netlify](https://byteburaq-huddlepage.netlify.app)
 
 ## My process
