@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Bn-Bushra/Coding-with-Frontend-Mentor/tree/cc86f3cd74a09558ec4fe20ff31b236fe2bad007/single-price-grid-component-master)
+- Live Site URL: [Live Site](https://byteburaq-singlepricegrid.netlify.app)
 
 ## My process
 
