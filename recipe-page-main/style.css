@@ -144,7 +144,7 @@ table {
       color: var(--clrNutmeg); /* Accent colour */
     }
     
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
     body {
         padding: 5rem 10rem;
         font-size: 1.5rem;
