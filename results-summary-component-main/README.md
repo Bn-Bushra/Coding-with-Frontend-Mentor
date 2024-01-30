@@ -28,7 +28,7 @@ My solution
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/Bn-Bushra/Coding-with-Frontend-Mentor/tree/861af43cbc690d92aa8d08ba24311d47015b2ffd/results-summary-component-main)
+- Solution URL: [GitHub](https://github.com/Bn-Bushra/Coding-with-Frontend-Mentor/tree/b5e1e201c012fe922f9a626a5ea09db56c885c0e/results-summary-component-main)
 - Live Site URL: [Live Site](https://byteburaq-resultsummary.netlify.app)
 
 ## My Process
