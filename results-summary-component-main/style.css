@@ -1,0 +1,216 @@
+/* Importing font */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/* Font face declaration */
+@font-face {
+  font-family: ffBody;
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+/* Color variables */
+:root {
+  --clrRed: hsl(0, 100%, 67%);
+  --clrRedBg: hsla(0, 100%, 67%, .1);
+  --clrYellow: hsl(39, 100%, 56%);
+  --clrYellowBg: hsla(39, 100%, 56%, .1);
+  --clrGreen: hsl(166, 100%, 37%);
+  --clrGreenBg: hsla(166, 100%, 37%, .1);
+  --clrBlue: hsl(234, 85%, 45%);
+  --clrBlueBg: hsla(234, 85%, 45%, .1);
+  --clrWhite: hsl(0, 0%, 100%);
+  --clrLavendar: hsl(241, 100%, 89%);
+  --clrGradientBg: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  --clrGradientCircle: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  --clrPaleBlue: hsl(221, 100%, 96%);
+  --clrGrayBlue: hsl(224, 30%, 27%);
+  --fsParagraph: 18px;
+  --fwMedium: 500;
+  --fwBold: 700;
+  --fwBolder: 800;
+  --ffBody: ffBody;
+}
+
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--clrWhite);
+  font-family: var(--ffBody);
+  display: grid;
+  place-items: center;
+  font-size: var(--fsBody);
+}
+
+/* Container styling */
+.container {
+  background-color: var(--clrWhite);
+  height: 35rem;
+  width: 45rem;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 25px;
+}
+
+/* Section styling */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 50%;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Result section styling */
+.result {
+  align-items: center;
+  background: var(--clrGradientBg);
+  border-radius: 2rem;
+  color: var(--clrPaleBlue);
+  justify-content: space-around;
+  padding: 2rem 3rem;
+}
+
+/* Circle styling */
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 12.5rem;
+  height: 12.5rem;
+  background: var(--clrGradientCircle);
+  border-radius: 50%;
+}
+
+/* Circle content styling */
+.circle h3 {
+  font-size: 4rem;
+  font-weight: var(--fwBolder);
+}
+
+.circle p {
+  opacity: .5;
+}
+
+/* Recommendation section styling */
+.result .recommendation h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.recommendation {
+  text-align: center;
+}
+
+/* Summary section styling */
+.summary {
+  background-color: transparent;
+  padding: 3rem 2rem;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.summary h2 {
+  text-align: left;
+}
+
+/* Rating block styling */
+.rating {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Individual score block styling */
+.block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+/* Category styling */
+.category {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+/* Score styling */
+.score span {
+  font-weight: var(--fwBolder);
+}
+
+/* Red category styling */
+.red {
+  color: var(--clrRed);
+}
+
+.redBg {
+  background-color: var(--clrRedBg);
+}
+
+/* Yellow category styling */
+.yellow {
+  color: var(--clrYellow);
+}
+
+.yellowBg {
+  background-color: var(--clrYellowBg);
+}
+
+/* Green category styling */
+.green {
+  color: var(--clrGreen);
+}
+
+.greenBg {
+  background-color: var(--clrGreenBg);
+}
+
+/* Blue category styling */
+.blue {
+  color: var(--clrBlue);
+}
+
+.blueBg {
+  background-color: var(--clrBlueBg);
+}
+
+/* Continue button styling */
+.summary button {
+  font-weight: var(--fwMedium);
+  color: var(--clrWhite);
+  background-color: var(--clrGrayBlue);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Continue button hover and focus styling */
+.summary button:hover,
+.summary button:focus {
+  background: var(--clrGradientBg);
+}
+
+/* Responsive styling for bigger screens */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .result {
+    border-radius: 0 0 2rem 2rem;
+  }
+}

@@ -1,0 +1,82 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character set and viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicon and stylesheet links -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Page title -->
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body>
+  <!-- Main container for the page -->
+  <main class="container">
+    <!-- Result section -->
+    <section class="result">
+      <h2>Your Result</h2>
+      <!-- Circle displaying average score -->
+      <div class="circle">
+        <h3>76</h3>
+        <p>of 100</p>
+      </div>
+      <!-- Recommendation based on the score -->
+      <div class="recommendation">
+        <h4>Great</h4>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </section>
+
+    <!-- Summary section -->
+    <section class="summary">
+      <h2>Summary</h2>
+      <!-- Rating blocks for different categories -->
+      <div class="rating">
+        <!-- Individual category block with score and icon -->
+        <div class="block redBg">
+          <div class="category red">
+            <img src="./assets/images/icon-reaction.svg" alt="reaction"></img>
+            <p>Reaction</p>
+          </div>
+          <div class="score"><span>80</span> / 100</div>
+        </div>
+
+        <!-- Repeat similar structure for other categories -->
+              <div class="block yellowBg">
+        <div class="category yellow">
+          <img src="./assets/images/icon-memory.svg" alt="Memory"></img>
+          <p>Memory</p>
+        </div>
+        <div class="score"><span>92</span> / 100</div>
+      </div>
+      
+      <div class="block greenBg">
+        <div class="category green">
+          <img src="./assets/images/icon-verbal.svg" alt="Verbal"></img>
+          <p>Verbal</p>
+        </div>
+        <div class="score"><span>61</span> / 100</div>
+      </div>
+      
+      <div class="block blueBg">
+        <div class="category blue">
+          <img src="./assets/images/icon-visual.svg" alt="Visual"></img>
+          <p>Visual</p>
+        </div>
+        <div class="score"><span>72</span> / 100</div>
+      </div>
+      </div>
+      <!-- Continue button -->
+      <button>Continue</button>
+    </section>
+  </main>
+  <!-- Script link for JavaScript -->
+  <script src="script.js">
+  </script>
+</body>
+</html>
