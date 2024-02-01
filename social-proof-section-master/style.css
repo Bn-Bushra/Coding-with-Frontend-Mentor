@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+--clrMagenta: hsl(300, 43%, 22%); /*pry color*/
+--clrPink: hsl(333, 80%, 67%); /* sec clr*/
+--clrGrayMagenta: hsl(303, 10%, 53%);
+--clrLightMagenta: hsl(300, 24%, 96%);
+--clrWhite: hsl(0, 0%, 100%);
+--fsBody: 0.9375rem;
+--ffBody: 'League Spartan', sans-serif;
+--fwRegular: 400;
+--fwMedium: 500;
+--fwBold: 700;
+}
+
+body {
+  background-image: url("./images/bg-pattern-bottom-mobile.svg"), url("./images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right bottom, left top;
+  background-color: var(--clrWhite);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'League Spartan', sans-serif;
+  font-size: var(--fsBody);
+}
+
+.container,  .hero, .intro, .reviews__highlight, .block, .cards, .card, .buyer__bio{
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  gap: 3rem;
+  padding: 5rem 0;
+  }
+
+.hero {
+  gap: 2rem;
+}
+
+.intro {
+  gap:1rem;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  font-weight: var(--fwBold);
+  color: var(--clrMagenta);
+}
+
+.intro p {
+  line-height: 1.5;
+  color: var(--clrMagenta);
+}
+
+.reviews__highlight {
+  gap: 1rem;
+}
+
+.block {
+  background-color: var(--clrLightMagenta);
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  gap: .5rem;
+}
+
+.block > .reviewer {
+  color: var(--clrMagenta);
+  font-weight: var(--fwBold);
+  text-align: center;
+}
+
+.cards {
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--clrMagenta);
+  border-radius: .5rem;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+
+.buyer__info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.buyer__image {
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+
+.buyer__bio h3 {
+  color: var(--clrWhite);
+  
+}
+
+.buyer__bio h4 {
+  color: var(--clrPink);
+  font-weight: var(--fwMedium);
+}
+
+.card p {
+  color: var(--clrWhite);
+  line-height: 1.5;
+  font-weight: var(--fwRegular);
+  font-size: 0.875rem ;
+}
+
+
+@media(min-width:1440px){
+  body {
+    background-image: url("./images/bg-pattern-bottom-desktop.svg"), url("./images/bg-pattern-top-desktop.svg");
+  }
+
+  .container {
+    width: 72rem;
+  }
+  
+  .hero, .cards, .block {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .hero {
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  
+  .hero, .intro {
+    flex-basis: 50%;
+  }
+  
+  .intro {
+  flex-basis: 40%;
+  text-align: left;
+  matgin-right: -3rem;
+}
+
+intro h1 {
+  font-size: 4rem;
+  }
+  
+  .reviews__highlight {
+    gap:1rem;
+  }
+  
+  .block__one {
+    transform: translateX(-30%);
+  }
+  
+  .block__two {
+    transform: translateX(-15%);
+  }
+  
+  .block {
+    gap: 2rem;
+  }
+  
+  .cards {
+    gap: 2rem;
+  }
+  
+   .cards .one{
+    transform: translateY(-2rem);
+  }
+  
+  .cards .two {
+    transform: translateY(-1rem);
+  }
+}
