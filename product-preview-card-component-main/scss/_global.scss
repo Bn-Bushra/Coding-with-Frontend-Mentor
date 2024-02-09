@@ -1,0 +1,37 @@
+@import "variable";
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+//resets
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: $ffBody;
+  font-size: $fsBody;
+  background-color: $clrCream;
+}
+
+p,
+del {
+  color: $clrGrayBlue;
+}
+
+//mixin
+$breakpoint-up: (
+  "md": "40em",
+  "l": "64em",
+  "xl": "90rem",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoint-up, $size)) {
+    @content;
+  }
+}
