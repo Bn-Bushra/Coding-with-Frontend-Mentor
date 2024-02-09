@@ -30,7 +30,7 @@ My solution
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/Bn-Bushra/Coding-with-Frontend-Mentor/product-preview-card-component-main)
+- Solution URL: [GitHub](https://github.com/Bn-Bushra/Coding-with-Frontend-Mentor/tree/8b5a2257c03ee29578f3e9f2e47f60f59e1bf58f/product-preview-card-component-main)
 - Live Site URL: [Live Site](https://byteburaq-productpreview.netlify.app)
 
 ## My Process
