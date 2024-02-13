@@ -1,0 +1,131 @@
+@import "variable";
+@import "global";
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  @include breakpoint-up(l) {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  section.hero {
+    text-align: center;
+    color: white;
+    margin-block: 4rem;
+    @include breakpoint-up(l) {
+      flex: 50%;
+      text-align: left;
+    }
+    h1 {
+      font-weight: $fwBold;
+      margin-block: 1rem;
+      font-size: clamp(2rem, calc(2rem + 2vw), 4rem);
+      @include breakpoint-up(l) {
+        font-size: 4rem;
+      }
+    }
+    p {
+      font-weight: $fwSemiBold;
+      line-height: 1.5;
+      @include breakpoint-up(l) {
+        font-size: clamp(1rem, calc(1rem + 1.23vw), 1.45125rem);
+      }
+    }
+  }
+  section.form {
+    @include breakpoint-up(l) {
+      flex: 50%;
+    }
+    .cta {
+      color: white;
+      margin: 1rem 0;
+      p {
+        line-height: 1.5;
+        text-align: center;
+        width: 100%;
+        background-color: $clrAccBlue;
+        padding: 1rem 4rem;
+        border-radius: 0.5rem;
+        span.bold {
+          font-weight: $fwBold;
+          font-size: calc($fsBody * 1.125);
+        }
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      width: 100%;
+      color: $clrNeuBlue;
+      background-color: white;
+      font-weight: $fwBold;
+      font-family: $ffBody;
+      input {
+        display: block;
+        padding: 1rem;
+        border: 1px solid $clrNeuGrayBlue;
+        border-radius: 0.25rem;
+        font-family: $ffBody;
+        &:not(:first-child) {
+          margin-top: 1rem;
+        }
+        &::placeholder {
+          font-weight: $fwBold;
+        }
+
+        &:invalid {
+          outline: solid $clrPryRed;
+        }
+
+        &[type="submit"] {
+          background-color: $clrPryGreen;
+          color: white;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          text-transform: uppercase;
+          box-shadow: 0px 4px 0 hsl(154deg 42.29% 56.32%);
+        }
+      }
+      .errorMsg {
+        color: $clrPryRed;
+        text-align: right;
+        font-style: italic;
+        margin-top: 0.25rem;
+      }
+
+      .errorIcon {
+        width: 24px;
+        position: absolute;
+        // bottom: 10px;
+        left: 88.5%;
+        transform: translate(50%, 50%);
+        visibility: hidden;
+        transition: 0.3s;
+      }
+      p {
+        text-align: center;
+        color: $clrNeuGrayBlue;
+        line-height: 1.5;
+        span.terms {
+          color: $clrPryRed;
+          font-weight: $fwBold;
+        }
+      }
+    }
+  }
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  &.error input {
+    border-color: $clrPryRed;
+  }
+}
