@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/a97dcf4703.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main class="container">
+      <img src="./images/logo.svg" alt="PING Company Logo" class="logo" />
+      <h1>We are launching <span class="bold">soon!</span></h1>
+      <p>Subscribe and get notified</p>
+      <form id="newsletterForm" action="/" onsubmit="return validateForm()">
+        <span class="emailInput">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Your email address..."
+          />
+          <p class="errorMsg" id="emailError"></p>
+        </span>
+        <input type="submit" value="Notify Me" />
+      </form>
+
+      <img src="./images/illustration-dashboard.png" class="illustration" />
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
