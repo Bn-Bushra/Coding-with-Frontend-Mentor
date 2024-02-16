@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="adviceNo">
+        Advice #<span id="adviceNo__ID"></span
+        ><!-- Advice ID goes here -->
+      </div>
+
+      <blockquote class="advice"><!-- Advice text goes here -->"</blockquote>
+      <div class="divider"></div>
+      <button id="newAdviceBtn" onclick="getAdvice(advice_url)">
+        <img src="./images/icon-dice.svg" />
+      </button>
+    </main>
+    <script>
+      const adviceID = document.querySelector("#adviceNo__ID");
+      const advice = document.querySelector(".advice");
+      const advice_url = "https://api.adviceslip.com/advice";
+
+      async function getAdvice(url) {
+        const response = await fetch(url);
+        var data = await response.json();
+        advice.innerHTML = '"' + data.slip.advice + '"';
+        adviceID.innerHTML = data.slip.id;
+      }
+      getAdvice(advice_url);
+    </script>
+  </body>
+</html>

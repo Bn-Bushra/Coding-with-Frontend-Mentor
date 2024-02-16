@@ -1,0 +1,70 @@
+@import "variable";
+@import "global";
+
+.container {
+  position: relative;
+  width: clamp(100.5008px, 90%, 33.75rem);
+  height: clamp(19.6875rem, 100%, 20.625rem);
+  background-color: $clrNeuGrayBlue;
+  padding: 1.5em 1rem 3rem;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 60em) {
+    padding: 1.5rem 2rem 3rem;
+  }
+
+  .adviceNo {
+    color: $clrPryGreen;
+    letter-spacing: 0.1563rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 1.2rem;
+  }
+
+  blockquote.advice {
+    text-align: center;
+    font-size: clamp($fsQuote, calc(1.25rem + 0.5vw), $fsQuote);
+    font-weight: $fwBolder;
+    margin-block: 18px;
+    line-height: 1.5;
+    @media (min-width: 60em) {
+      margin-block: 18px 44px;
+    }
+  }
+
+  #newAdviceBtn {
+    position: absolute;
+    top: 90%;
+    display: grid;
+    place-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: $clrPryGreen;
+    border-radius: 50%;
+    border: transparent;
+    transition: 0.3s ease-in-out;
+    &:hover,
+    &:active {
+      box-shadow: 0px 0px 1rem 1px $clrPryGreen;
+    }
+
+    img {
+      width: 1.5rem;
+    }
+  }
+
+  .divider {
+    margin-bottom: 1rem;
+    height: 1rem;
+    width: 100%;
+    background: url(./../images/pattern-divider-mobile.svg) no-repeat center;
+    @media (min-width: 60em) {
+      background-image: url(./../images/pattern-divider-desktop.svg);
+    }
+  }
+}
