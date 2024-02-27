@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <script
+      src="https://kit.fontawesome.com/a97dcf4703.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+
+  <body>
+    <div class="font-body py-6">
+      <!--Content Wrapper-->
+
+      <!--Start Nav-->
+      <nav class="w-full px-4 flex justify-between items-center">
+        <div>
+          <img
+            class="w-16 md:w-24 lg:w-36"
+            src="./images/logo.svg"
+            alt="Company Logo"
+          />
+        </div>
+        <!--Logo-->
+        <ul class="flex justify-around items-center gap-6 text-xs">
+          <!--Menu Links-->
+          <li class=""><a href="#">Features</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+      <!--End Nav-->
+      <main>
+        <section
+          class="flex py-16 px-6 justify-center flex-col items-center lg:flex-row-reverse"
+        >
+          <!--Hero Section Start-->
+          <div class="lg:flex-1 lg:p-16">
+            <img
+              class="w-96 lg:w-full lg:my-0"
+              src="./images/illustration-1.svg"
+              alt="illustration-1"
+            />
+          </div>
+          <!--Hero Section Image-->
+          <div class="lg:flex-1">
+            <!--Hero Section Content-->
+            <h1
+              class="text-xl text-center lg:text-left lg:text-4xl font-bold my-6"
+            >
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p class="text-sm text-center lg:text-left lg:my-4">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <form
+              onsubmit="return formVal()"
+              class="flex font-heading mt-8 lg:flex-row lg:w-full flex-col gap-4 m-4"
+            >
+              <div>
+                <input
+                  class="w-full p-2 pl-4 rounded border border-pry-200 placeholder-neu-200 relative placeholder:text-xs"
+                  type="text"
+                  name="email"
+                  required
+                  id="email1"
+                  placeholder="Enter your email..."
+                />
+                <p
+                  class="errorMsg1 text-xs mb-4 text-red-600 absolute mt-1"
+                ></p>
+              </div>
+              <input
+                class="px-6 py-2 mt-2 font-bold rounded shadow-2xl text-white bg-blue-700 text-center border-red-100 text-base"
+                type="submit"
+                value="Get Started"
+              />
+            </form>
+          </div>
+        </section>
+        <!--Hero Section End-->
+        <img
+          class="lg:hidden w-full"
+          src="./images/bg-curve-mobile.svg"
+          alt="curve"
+        />
+        <img
+          class="hidden lg:block w-full"
+          src="./images/bg-curve-desktop.svg"
+          alt="curve"
+        />
+        <section
+          class="flex py-8 px-5 justify-center flex-col items-center bg-neu-100 lg:flex-row-reverse"
+        >
+          <!--Feature Section Start-->
+          <img
+            class="w-96 lg:flex-1"
+            src="./images/illustration-2.svg"
+            alt="illustration-2"
+          />
+          <div class="lg:flex-1">
+            <!--Feature Section Content-->
+            <h2
+              class="text-center font-heading font-bold text-base mt-16 mb-6 lg:text-left lg:text-3xl"
+            >
+              Stay productive, wherever you are
+            </h2>
+            <p class="my-4 text-[1rem] text-pry-200 lg:text-sm lg:mr-5">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="my-4 text-base lg:text-sm text-pry-200 lg:mr-5">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+            <a
+              href="#"
+              class="text-center my-0 pb-2 text-sm mx-auto text-acc-200 border-acc-200 border-b-2 lg:text-sm lg:mr-5"
+            >
+              <p class="inline text-center">See how Fylo works</p>
+              <img
+                class="inline-block ml-1 w-4 h-4"
+                src="./images/icon-arrow.svg"
+                alt="arrow icon"
+              />
+            </a>
+            <div
+              class="bg-white rounded m-4 mt-8 pl-8 pr-2 py-4 lg:py-0 lg:w-64 lg:pr-4 lg:pl-6"
+            >
+              <!--Testimonial Quote-->
+              <img src="./images/icon-quotes.svg" alt="quote" />
+              <!--Quote img-->
+              <p class="text-xs">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+              <div class="mt-4 flex items-center gap-4">
+                <!--Founder Card-->
+                <img
+                  class="rounded-full w-8"
+                  src="./images/avatar-testimonial.jpg"
+                  alt=""
+                />
+                <div class="">
+                  <h4 class="font-bold text-xs">Kyle Burton</h4>
+                  <h5 class="text-[.75rem]">Founder & CEO, Huddle</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="px-4 items-center lg:flex text-center lg:flex-row bg-pry-200 text-white py-16"
+        >
+          <div class="lg:text-left lg:pr-24">
+            <h2 class="font-bold mx-4 lg:ml-0 lg:text-2xl">
+              Get early access today
+            </h2>
+            <p class="text-sm">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <form
+            class="font-heading mt-8 flex justify-end flex-col lg:block w-full lg:flex-col gap-4 m-4"
+          >
+            <input
+              class="p-2 rounded border border-pry-200 placeholder-neu-200 placeholder:text-xs placeholder:pl-2"
+              type="email"
+              name="email"
+              id="email2"
+              placeholder="example@email.com"
+            />
+            <input
+              class="px-6 py-2 font-bold rounded shadow-2xl text-white bg-blue-700 text-center border-red-100 text-base"
+              type="submit"
+              value="Get Started For Free"
+            />
+          </form>
+        </section>
+        <footer class="bg-pry-100 text-white px-4 py-10 pl-8">
+          <img class="w-28 py-4" src="./images/logo-footer.svg" alt="" />
+          <div class="lg:flex justify-between items-start">
+            <!--footer links-->
+            <div class="flex flex-col gap-4 text-sm mt-4 lg:mt-0">
+              <!--phone and email-->
+              <div class="flex gap-4 justify-start items-center">
+                <img src="./images/icon-phone.svg" alt="phone icon" />
+                <p>Phone: +1-543-123-4567</p>
+              </div>
+              <div class="flex gap-4 justify-start items-center">
+                <img src="./images/icon-email.svg" alt="email icon" />
+                <p>example@fylo.com</p>
+              </div>
+            </div>
+            <div>
+              <!--Link 1-->
+              <ul class="flex flex-col gap-2 mt-8 lg:mt-0 text-sm">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div>
+              <!--Link 2-->
+              <ul class="flex flex-col gap-2 mt-8 lg:mt-0 text-sm">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+            <div>
+              <!--Socials-->
+              <ul class="flex gap-4 my-8 lg:my-0 items-center justify-center">
+                <li class="text-sm">
+                  <i
+                    class="fa-brands fa-facebook-f p-2 rounded-full border"
+                  ></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-twitter p-2 rounded-full border"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-instagram p-2 rounded-full border"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script>
+      function formVal() {
+        const emailInput = document.querySelector("#email1");
+        const errorI = document.querySelector(".errorMsg1");
+        var email = emailInput.value.trim();
+
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (email === "") {
+          errorI.textContent = "Please enter your email";
+          return false;
+        }
+
+        if (!emailRegex.test(email)) {
+          errorI.textContent = "Please enter a valid email address";
+          return false;
+        }
+
+        errorI.textContent = ""; // Clear error message if email is valid
+        return true;
+      }
+    </script>
+  </body>
+</html>
